@@ -27,6 +27,9 @@ class App extends Component {
   createBusiness(obj){
     console.log('obj',obj)
     var newBusiness = obj
+    this.setState({
+      businesses: this.state.businesses.concat([newBusiness])
+    })
   }
   render() {
     return (
