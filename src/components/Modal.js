@@ -7,12 +7,11 @@ export default class Modal extends React.Component {
 			name: '',
 			description: '',
 			stars : '',
-			categories: '',
+			subcategories: '',
 			price: '',
 		}
 	}
 	onChange(e) {
-		console.log(e.target.id)
 		switch(e.target.id){
 			case 'name':
 				this.setState({ name: e.target.value})
@@ -24,15 +23,25 @@ export default class Modal extends React.Component {
 				this.setState({ stars: e.target.value})
 				break
 			case 'categories':
-				this.setState({ categories: e.target.value})
+				this.setState({ subcategories: e.target.value})
 				break
 			case 'price':
 				this.setState({ price: e.target.value})
 			default:
 		}
 	}
+	onSubmit(){
+		this.props.createBusiness(this.state)
+		this.setState({
+			name: '',
+			description: '',
+			stars : '',
+			subcategories: '',
+			price: '',
+		})
+		this.props.displayModal()
+	}
 	render(){
-		console.log('show', this.props.show)
 		const { name, description, stars, categories, price } = this.state
 		return(
 			<div className='modal' style={this.props.show}>
@@ -45,7 +54,7 @@ export default class Modal extends React.Component {
 					<ModalRow id='price' value={price} onChange={this.onChange.bind(this)} label='Price'/>
 				</div>
 				<div className='container'>				
-					<input style={{marginTop: '10px'}} type='submit'/>
+					<input onClick={this.onSubmit.bind(this)} style={{marginTop: '10px'}} type='submit'/>
 					<i 
 						onClick={this.props.displayModal} 
 						style={{color: 'red', alignSelf: 'right', cursor: 'pointer', marginTop: '12px'}} 

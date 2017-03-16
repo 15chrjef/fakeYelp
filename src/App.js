@@ -25,10 +25,10 @@ class App extends Component {
     this.setState({ businesses: newBusinesses})
   }
   createBusiness(obj){
+    console.log('obj',obj)
     var newBusiness = obj
   }
   render() {
-    console.log('businesses', this.state.businesses)
     return (
       <div className="App">
         <div className="App-header">
