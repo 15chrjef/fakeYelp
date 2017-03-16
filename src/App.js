@@ -13,7 +13,7 @@ class App extends Component {
     }
   }
   displayModal(){
-    var newObj = this.state.show.display === undefined ? {} : { display: 'none'};
+    var newObj = this.state.show.display !== undefined ? {} : { display: 'none'};
     console.log(this.state.show)
     this.setState({ show: newObj })
   }
@@ -37,7 +37,7 @@ class App extends Component {
           <BusinessContainer deleteBusiness={this.deleteBusiness.bind(this)} businesses={this.state.businesses} />
           <p onClick={this.displayModal.bind(this)} style={{color: '#0073BB', cursor: 'pointer'}}>Create a new Hot Business</p>
         </div>
-        <Modal displayModal={this.displayModal.bind(this)} disshow={this.state.show}/>
+        <Modal displayModal={this.displayModal.bind(this)} show={this.state.show}/>
       </div>
     );
   }
