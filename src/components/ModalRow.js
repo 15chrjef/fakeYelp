@@ -26,7 +26,7 @@ const ModalRow = (props) => {
 	}
 	return(
 		<div style={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '10px'}}>
-			<label>{label}</label>
+			<label style={{fontWeight: 'bold'}}>{label}</label>
 			{tag}
 		</div>
 	)

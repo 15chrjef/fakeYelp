@@ -24,6 +24,9 @@ class App extends Component {
     var newBusinesses = this.state.businesses.slice().filter((val, i) => i !== key)
     this.setState({ businesses: newBusinesses})
   }
+  createBusiness(obj){
+    var newBusiness = obj
+  }
   render() {
     console.log('businesses', this.state.businesses)
     return (
@@ -37,7 +40,7 @@ class App extends Component {
           <BusinessContainer deleteBusiness={this.deleteBusiness.bind(this)} businesses={this.state.businesses} />
           <p onClick={this.displayModal.bind(this)} style={{color: '#0073BB', cursor: 'pointer'}}>Create a new Hot Business</p>
         </div>
-        <Modal displayModal={this.displayModal.bind(this)} show={this.state.show}/>
+        <Modal createBusiness={this.createBusiness.bind(this)} displayModal={this.displayModal.bind(this)} show={this.state.show}/>
       </div>
     );
   }

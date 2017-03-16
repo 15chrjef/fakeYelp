@@ -44,12 +44,14 @@ export default class Modal extends React.Component {
 					<ModalRow id='categories' value={categories} onChange={this.onChange.bind(this)} label='Categories'/>
 					<ModalRow id='price' value={price} onChange={this.onChange.bind(this)} label='Price'/>
 				</div>
-				<input style={{marginTop: '10px'}} type='submit'/>
-				<i 
-					onClick={this.props.displayModal} 
-					style={{color: 'red', alignSelf: 'right', cursor: 'pointer', marginTop: '12px'}} 
-					className="fa fa-minus-circle fa-2x">
-				</i>
+				<div className='container'>				
+					<input style={{marginTop: '10px'}} type='submit'/>
+					<i 
+						onClick={this.props.displayModal} 
+						style={{color: 'red', alignSelf: 'right', cursor: 'pointer', marginTop: '12px'}} 
+						className="fa fa-minus-circle fa-2x">
+					</i>
+				</div>
 			</div>
 		)
 	}
