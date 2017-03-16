@@ -1,0 +1,142 @@
+﻿{
+  "businesses":[
+    {
+        "name":"Dietmar's Hoffbrau",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis purus quis sapien laoreet, tincidunt molestie nisl vehicula. Nunc venenatis dui in massa rhoncus eleifend a quis purus. Aliquam sit amet sapien non sem pharetra congue nec at nisi. Donec facilisis congue semper. Aliquam maximus facilisis elit, ut volutpat justo sodales bibendum. Nunc viverra molestie justo non egestas. Fusce non accumsan mi, at hendrerit purus. Nullam dolor massa, ultrices id lobortis vitae, congue vitae mauris. Suspendisse in dolor a nisi pulvinar ornare. Curabitur hendrerit ultrices iaculis. Praesent volutpat eget velit eget lacinia. Curabitur gravida vestibulum condimentum. Morbi ullamcorper sem ac.",
+        "reviews":[
+            {"rating":2,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":2,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."}
+        ],
+        "category":"restaurant",
+        "subcategories":"hoffbrau,bistro,24hours",
+        "hours":[
+          {"Mon":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Tue":["Closed"]},
+          {"Wed":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Thu":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Fri":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Sat":["11:00 am - 3:00 pm", "4:30 pm - 10:00 pm"]},
+          {"Sun":["11:00 am - 3:00 pm"]}
+        ],
+        "price-range":3
+    },
+    {
+        "name":"Thai Eatery",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis purus quis sapien laoreet, tincidunt molestie nisl vehicula. Nunc venenatis dui in massa rhoncus eleifend a quis purus. Aliquam sit amet sapien non sem pharetra congue nec at nisi. Donec facilisis congue semper. Aliquam maximus facilisis elit, ut volutpat justo sodales bibendum. Nunc viverra molestie justo non egestas. Fusce non accumsan mi, at hendrerit purus. Nullam dolor massa, ultrices id lobortis vitae, congue vitae mauris. Suspendisse in dolor a nisi pulvinar ornare. Curabitur hendrerit ultrices iaculis. Praesent volutpat eget velit eget lacinia. Curabitur gravida vestibulum condimentum. Morbi ullamcorper sem ac.",
+        "reviews":[
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":2,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":2,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":2,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."}
+        ],
+        "category":"restaurant",
+        "subcategories":"thai,soup,vegetarian",
+        "hours":[
+          {"Mon":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Tue":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Wed":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Thu":["11:00 am - 3:00 pm", "4:30 pm - 9:00 pm"]},
+          {"Fri":["11:00 am - 3:00 pm", "4:30 pm - 10:00 pm"]},
+          {"Sat":["11:00 am - 3:00 pm", "4:30 pm - 10:00 pm"]},
+          {"Sun":["11:00 am - 6:00 pm"]}
+        ],
+        "price-range":1
+    },
+    {
+        "name":"Robert's Burgers",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis purus quis sapien laoreet, tincidunt molestie nisl vehicula. Nunc venenatis dui in massa rhoncus eleifend a quis purus. Aliquam sit amet sapien non sem pharetra congue nec at nisi. Donec facilisis congue semper. Aliquam maximus facilisis elit, ut volutpat justo sodales bibendum. Nunc viverra molestie justo non egestas. Fusce non accumsan mi, at hendrerit purus. Nullam dolor massa, ultrices id lobortis vitae, congue vitae mauris. Suspendisse in dolor a nisi pulvinar ornare. Curabitur hendrerit ultrices iaculis. Praesent volutpat eget velit eget lacinia. Curabitur gravida vestibulum condimentum. Morbi ullamcorper sem ac.",
+        "reviews":[
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."}
+        ],
+        "category":"restaurant",
+        "subcategories":"burger,breakfast,brunch,sandwich,thai",
+        "hours":[
+          {"Mon":["11:00 am - 6:00 pm"]},
+          {"Tue":["11:00 am - 6:00 pm"]},
+          {"Wed":["Closed"]},
+          {"Thu":["11:00 am - 6:00 pm"]},
+          {"Fri":["10:00 am - 11:00 pm"]},
+          {"Sat":["10:00 am - 11:00 pm"]},
+          {"Sun":["10:00 am - 7:00 pm"]}
+        ],
+        "price-range":2
+    },
+    {
+        "name":"Haystack",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis purus quis sapien laoreet, tincidunt molestie nisl vehicula. Nunc venenatis dui in massa rhoncus eleifend a quis purus. Aliquam sit amet sapien non sem pharetra congue nec at nisi. Donec facilisis congue semper. Aliquam maximus facilisis elit, ut volutpat justo sodales bibendum. Nunc viverra molestie justo non egestas. Fusce non accumsan mi, at hendrerit purus. Nullam dolor massa, ultrices id lobortis vitae, congue vitae mauris. Suspendisse in dolor a nisi pulvinar ornare. Curabitur hendrerit ultrices iaculis. Praesent volutpat eget velit eget lacinia. Curabitur gravida vestibulum condimentum. Morbi ullamcorper sem ac.",
+        "reviews":[
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."}
+        ],
+        "category":"restaurant",
+        "subcategories":"vegetarian,lunch",
+        "hours":[
+          {"Mon":["10:00 am - 4:00 pm"]},
+          {"Tue":["10:00 am - 4:00 pm"]},
+          {"Wed":["10:00 am - 4:00 pm"]},
+          {"Thu":["10:00 am - 4:00 pm"]},
+          {"Fri":["10:00 am - 4:00 pm"]},
+          {"Sat":["Closed"]},
+          {"Sun":["Closed"]}
+        ],
+        "price-range":1
+    },
+    {
+        "name":"Fondue Freddy",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis purus quis sapien laoreet, tincidunt molestie nisl vehicula. Nunc venenatis dui in massa rhoncus eleifend a quis purus. Aliquam sit amet sapien non sem pharetra congue nec at nisi. Donec facilisis congue semper. Aliquam maximus facilisis elit, ut volutpat justo sodales bibendum. Nunc viverra molestie justo non egestas. Fusce non accumsan mi, at hendrerit purus. Nullam dolor massa, ultrices id lobortis vitae, congue vitae mauris. Suspendisse in dolor a nisi pulvinar ornare. Curabitur hendrerit ultrices iaculis. Praesent volutpat eget velit eget lacinia. Curabitur gravida vestibulum condimentum. Morbi ullamcorper sem ac.",
+        "reviews":[
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":3,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":5,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":1,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."},
+            {"rating":4,"review":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus leo convallis eros volutpat condimentum. In vel tincidunt justo. Quisque."}
+        ],
+        "category":"restaurant",
+        "subcategories":"fondue,dinner,brunch",
+        "hours":[
+          {"Mon":["6:00 pm - 11:00 pm"]},
+          {"Tue":["6:00 pm - 11:00 pm"]},
+          {"Wed":["6:00 pm - 11:00 pm"]},
+          {"Thu":["6:00 pm - 11:00 pm"]},
+          {"Fri":["6:00 pm - 11:30 pm"]},
+          {"Sat":["11:00 am - 3:30 pm", "6:00 pm - 11:30 pm"]},
+          {"Sun":["11:00 am - 3:30 pm", "6:00 pm - 9:30 pm"]}
+        ],
+        "price-range":5
+    }
+  ]
+}
