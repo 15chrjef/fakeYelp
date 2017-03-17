@@ -36,28 +36,25 @@ export default class Modal extends React.Component {
 		if(newProps.editingBusiness !== '' && newProps.editingBusiness !== null){
 			const { name, description, reviews, subcategories, price, bKey } = newProps.editingBusiness
 			this.setState({
-				name,
-				description,
-				stars: reviews[0].rating,
-				subcategories,
-				price,
+				name: name || 'name',
+				description: description || 'description',
+				stars: reviews[0].rating || [{rating: 1}],
+				subcategories: subcategories || 'subcategories',
+				price: price || 0,
 				bKey
 			})
 		}
 	}
 	handleSubmit(){
-		const { name, description, subcategories, price, stars } = this.state
-		if(name && description && subcategories && price && stars){
-			this.props.createOrUpdateBusiness(this.state)
-			this.props.displayModal()
-			this.setState({
-				name: '',
-				description: '',
-				stars : '',
-				subcategories: '',
-				price: '',
-			})
-		}
+		this.props.createOrUpdateBusiness(this.state)
+		this.props.displayModal()
+		this.setState({
+			name: '',
+			description: '',
+			stars : '',
+			subcategories: '',
+			price: '',
+		})
 	}
 	render(){
 		let { name, description, stars, categories, price } = this.state
