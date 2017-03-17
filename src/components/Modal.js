@@ -31,19 +31,11 @@ export default class Modal extends React.Component {
 			default:
 		}
 	}
-	//situation task action(i) result(data)
-		//bullpoints only a couple minutes
-	//problem solving, clarify, clarify,clarify
-	//system design
-	//coding front end web applications
-	//code on a white board, write down details, discuss it, clarify, clarify, clarify
-	//discuss ways to approach the problem
-	//write very clean code, no syntax
-	//last fiew minutes... if i had more time here is how i would optimize and do this
-	componentWillMount(){
-		console.log('mounting mounting')
-		if(this.props.editingBusiness !== null){
-			const { name, description, reviews, subcategories, price, bKey } = this.props.editingBusiness
+	componentWillReceiveProps(newProps){
+		console.log('mounting mounting', newProps)
+		const { bKey } = this.state;
+		if(newProps.editingBusiness !== '' && newProps.editingBusiness !== null){
+			const { name, description, reviews, subcategories, price, bKey } = newProps.editingBusiness
 			console.log('businesssss', this.state)
 			this.setState({
 				name,
@@ -55,8 +47,8 @@ export default class Modal extends React.Component {
 			})
 		}
 	}
-	onSubmit(){
-		this.props.createBusiness(this.state)
+	handleSubmit(){
+		this.props.createOrUpdateBusiness(this.state)
 		this.props.displayModal()
 		this.setState({
 			name: '',
@@ -67,7 +59,6 @@ export default class Modal extends React.Component {
 		})
 	}
 	render(){
-		console.log('modal props', this.props, 'state props', this.state)
 		const { name, description, stars, categories, price } = this.state
 		const title = this.props.type === 'create' ? 'Create a Business': 'Update the Description';
 			return(
@@ -81,7 +72,7 @@ export default class Modal extends React.Component {
 						<ModalRow id='price' value={price} onChange={this.onChange.bind(this)} label='Price'/>
 					</div>
 					<div className='container'>				
-						<input onClick={this.onSubmit.bind(this)} style={{marginTop: '10px'}} type='submit'/>
+						<input onClick={this.handleSubmit.bind(this)} style={{marginTop: '10px'}} type='submit'/>
 						<i 
 							onClick={this.props.displayModal} 
 							style={{color: 'red', alignSelf: 'right', cursor: 'pointer', marginTop: '12px'}} 

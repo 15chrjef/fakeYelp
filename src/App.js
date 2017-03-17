@@ -15,14 +15,17 @@ class App extends Component {
     }
   }
   displayModal(type, business){
-    console.log('displayModal', business)
-    this.setState({ 
-      modalType: type,
-      editingBusiness: business
-    })
     var newObj = this.state.show.display !== undefined ? {} : { display: 'none'};
-    console.log(this.state.show)
-    this.setState({ show: newObj })
+
+    if(business && business.bKey){
+      this.setState({ 
+        modalType: type,
+        editingBusiness: business,
+        show: newObj
+      })
+    } else {
+      this.setState({  modalType: type, show: newObj})
+    }
   }
   componentDidMount(){
     this.setState({ businesses: businessList.businesses})
@@ -38,15 +41,18 @@ class App extends Component {
 			description,
       reviews : [{rating: stars}],
 			subcategories,
-			price
     }
-    if(obj.bKey === undefined){
+    newBusiness['price-range'] = price
+    console.log(newBusiness, 'obj.bkey', obj.bKey)
+    if(!obj.bKey){
       this.setState({
-        businesses: this.state.businesses.concat([newBusiness])
+        businesses: this.state.businesses.concat([newBusiness]),
+        editingBusiness: null
       })
     }else {
       this.setState({
-        businesses: this.state.businesses.map( (bus, i) => i === bKey ? newBusiness : bus)
+        businesses: this.state.businesses.map( (bus, i) => i === bKey ? newBusiness : bus),
+        editingBusiness: null
       })
     }
   }
