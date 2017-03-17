@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Modal and ModalRow without crashing 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "justifyContent": "space-between",
+      "marginTop": "10px",
+      "width": "90%",
+    }
+  }
+>
+  <label
+    style={
+      Object {
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Name
+  </label>
+  <input
+    id="name"
+    onChange={undefined}
+    style={
+      Object {
+        "maxWidth": "70%",
+        "width": "70%",
+      }
+    }
+    type="text"
+    value={undefined}
+  />
+</div>
+`;
+
+exports[`renders Modal and ModalRow without crashing 2`] = `
+<div
+  className="modal"
+  style={undefined}
+>
+  <h3
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    Update the Description
+  </h3>
+  <h5
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    Must have all fields filled for Creation
+  </h5>
+  <div
+    className="container"
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "marginTop": "10px",
+          "width": "90%",
+        }
+      }
+    >
+      <label
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Name
+      </label>
+      <input
+        id="name"
+        onChange={[Function]}
+        style={
+          Object {
+            "maxWidth": "70%",
+            "width": "70%",
+          }
+        }
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "marginTop": "10px",
+          "width": "90%",
+        }
+      }
+    >
+      <label
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Description
+      </label>
+      <textarea
+        id="description"
+        onChange={[Function]}
+        style={
+          Object {
+            "height": "150px",
+            "marginLeft": "60px",
+            "maxHeight": "150px",
+            "maxWidth": "70%",
+            "width": "70%",
+          }
+        }
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "marginTop": "10px",
+          "width": "90%",
+        }
+      }
+    >
+      <label
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Stars
+      </label>
+      <input
+        id="stars"
+        onChange={[Function]}
+        style={
+          Object {
+            "maxWidth": "70%",
+            "width": "70%",
+          }
+        }
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "marginTop": "10px",
+          "width": "90%",
+        }
+      }
+    >
+      <label
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Categories
+      </label>
+      <input
+        id="categories"
+        onChange={[Function]}
+        style={
+          Object {
+            "maxWidth": "70%",
+            "width": "70%",
+          }
+        }
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "marginTop": "10px",
+          "width": "90%",
+        }
+      }
+    >
+      <label
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Price
+      </label>
+      <input
+        id="price"
+        onChange={[Function]}
+        style={
+          Object {
+            "maxWidth": "70%",
+            "width": "70%",
+          }
+        }
+        type="text"
+        value={undefined}
+      />
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <input
+      onClick={[Function]}
+      style={
+        Object {
+          "marginTop": "10px",
+        }
+      }
+      type="submit"
+    />
+    <i
+      className="fa fa-minus-circle fa-2x"
+      onClick={undefined}
+      style={
+        Object {
+          "alignSelf": "right",
+          "color": "red",
+          "cursor": "pointer",
+          "marginTop": "12px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

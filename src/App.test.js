@@ -1,8 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import renderer from 'react-test-renderer';
+import ModalRow from './components/ModalRow'
+import Modal from './components/Modal'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+it('renders Modal and ModalRow without crashing', () => {
+  const row = renderer.create(
+		<ModalRow id='name' value='' label='Name' />
+	);
+  let modalRowTree = row.toJSON();
+	expect(modalRowTree).toMatchSnapshot();
+
+  const modal = renderer.create(
+		<Modal />
+	);
+  let modalTree = modal.toJSON();
+	expect(modalTree).toMatchSnapshot();
 });

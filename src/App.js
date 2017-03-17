@@ -43,7 +43,6 @@ class App extends Component {
 			subcategories,
     }
     newBusiness['price-range'] = price
-    console.log(newBusiness, 'obj.bkey', obj.bKey)
     if(!obj.bKey){
       this.setState({
         businesses: this.state.businesses.concat([newBusiness]),
