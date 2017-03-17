@@ -6,7 +6,7 @@ const ModalRow = (props) => {
 	if(id === 'description'){
 		tag = (
 			<textarea 
-				style={{width: '70%'}}
+				style={{width: '70%', height: '150px', maxWidth: '70%', maxHeight: '150px', marginLeft: '60px'}}
 				type='text' 
 				id={id} 
 				value={name} 
@@ -16,7 +16,7 @@ const ModalRow = (props) => {
 	}else {
 		tag =(	
 			<input 
-				style={{width: '70%'}}
+				style={{width: '70%',  maxWidth: '70%'}}
 				type='text' 
 				id={id} 
 				value={name} 
@@ -25,7 +25,7 @@ const ModalRow = (props) => {
 		)
 	}
 	return(
-		<div style={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '10px'}}>
+		<div style={{display: 'flex', justifyContent: 'space-between', width: '90%', marginTop: '10px'}}>
 			<label style={{fontWeight: 'bold'}}>{label}</label>
 			{tag}
 		</div>

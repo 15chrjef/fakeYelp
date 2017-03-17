@@ -33,6 +33,7 @@ input:focus {
   margin: 10px 0 10px 0;
   border-radius: 5px;
   width: 30%;
+  height: 375px;
 }
 
 .businessContainer {
@@ -64,4 +65,9 @@ input:focus {
   left: 30%;
   box-shadow: 0px 0px 20px;
   background-color: white;
+  overflow: scroll;
+}
+
+.description:hover {
+  color: #0073BB;
 }

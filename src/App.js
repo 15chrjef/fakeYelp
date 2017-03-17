@@ -9,10 +9,17 @@ class App extends Component {
     super()
     this.state = {
       businesses: [],
-      show: { display: 'none'}
+      show: { display: 'none'},
+      modalType: 'create',
+      editingBusiness: null 
     }
   }
-  displayModal(){
+  displayModal(type, business){
+    console.log('displayModal', business)
+    this.setState({ 
+      modalType: type,
+      editingBusiness: business
+    })
     var newObj = this.state.show.display !== undefined ? {} : { display: 'none'};
     console.log(this.state.show)
     this.setState({ show: newObj })
@@ -24,14 +31,27 @@ class App extends Component {
     var newBusinesses = this.state.businesses.slice().filter((val, i) => i !== key)
     this.setState({ businesses: newBusinesses})
   }
-  createBusiness(obj){
-    console.log('obj',obj)
-    var newBusiness = obj
-    this.setState({
-      businesses: this.state.businesses.concat([newBusiness])
-    })
+  createOrUpdateBusiness(obj){
+    const { name, description, stars, subcategories, price, bKey } = obj;
+    var newBusiness = {
+      name,
+			description,
+      reviews : [{rating: stars}],
+			subcategories,
+			price
+    }
+    if(obj.bKey === undefined){
+      this.setState({
+        businesses: this.state.businesses.concat([newBusiness])
+      })
+    }else {
+      this.setState({
+        businesses: this.state.businesses.map( (bus, i) => i === bKey ? newBusiness : bus)
+      })
+    }
   }
   render() {
+    const { show, modalType, editingBusiness, businesses } = this.state
     return (
       <div className="App">
         <div className="App-header">
@@ -40,10 +60,20 @@ class App extends Component {
         </div>
         <div className="container">
           <h3 style={{color: 'red'}}>Hot & New Businesses</h3>
-          <BusinessContainer deleteBusiness={this.deleteBusiness.bind(this)} businesses={this.state.businesses} />
-          <p onClick={this.displayModal.bind(this)} style={{color: '#0073BB', cursor: 'pointer'}}>Create a new Hot Business</p>
+          <BusinessContainer 
+            displayModal={this.displayModal.bind(this)} 
+            deleteBusiness={this.deleteBusiness.bind(this)} 
+            businesses={businesses} 
+          />
+          <p onClick={this.displayModal.bind(this, 'create')} style={{color: '#0073BB', cursor: 'pointer'}}>Create a new Hot Business</p>
         </div>
-        <Modal createBusiness={this.createBusiness.bind(this)} displayModal={this.displayModal.bind(this)} show={this.state.show}/>
+        <Modal 
+          createOrUpdateBusiness={this.createOrUpdateBusiness.bind(this)} 
+          displayModal={this.displayModal.bind(this)} 
+          show={show}
+          type={modalType}
+          editingBusiness={editingBusiness}
+        />
       </div>
     );
   }
