@@ -32,11 +32,9 @@ export default class Modal extends React.Component {
 		}
 	}
 	componentWillReceiveProps(newProps){
-		console.log('mounting mounting', newProps)
 		const { bKey } = this.state;
 		if(newProps.editingBusiness !== '' && newProps.editingBusiness !== null){
 			const { name, description, reviews, subcategories, price, bKey } = newProps.editingBusiness
-			console.log('businesssss', this.state)
 			this.setState({
 				name,
 				description,
@@ -48,22 +46,26 @@ export default class Modal extends React.Component {
 		}
 	}
 	handleSubmit(){
-		this.props.createOrUpdateBusiness(this.state)
-		this.props.displayModal()
-		this.setState({
-			name: '',
-			description: '',
-			stars : '',
-			subcategories: '',
-			price: '',
-		})
+		const { name, description, subcategories, price, stars } = this.state
+		if(name && description && subcategories && price && stars){
+			this.props.createOrUpdateBusiness(this.state)
+			this.props.displayModal()
+			this.setState({
+				name: '',
+				description: '',
+				stars : '',
+				subcategories: '',
+				price: '',
+			})
+		}
 	}
 	render(){
-		const { name, description, stars, categories, price } = this.state
+		let { name, description, stars, categories, price } = this.state
 		const title = this.props.type === 'create' ? 'Create a Business': 'Update the Description';
 			return(
 				<div className='modal' style={this.props.show}>
 					<h3 style={{color: 'red'}}>{title}</h3>
+					<h5 style={{color: 'red'}}>Must have all fields filled for Creation</h5>
 					<div className='container'>
 						<ModalRow id='name' value={name} onChange={this.onChange.bind(this)} label='Name'/>
 						<ModalRow id='description' value={description} onChange={this.onChange.bind(this)} label='Description'/>
