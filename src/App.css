@@ -1,3 +1,7 @@
+html {
+  font-family: sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -29,6 +33,7 @@ input:focus {
   margin: 10px 0 10px 0;
   border-radius: 5px;
   width: 30%;
+  height: 375px;
 }
 
 .businessContainer {
@@ -36,7 +41,7 @@ input:focus {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 70vw
+  width: 80vw
 }
 
 .businessInfo {
@@ -50,4 +55,19 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.modal {
+  position: fixed;
+  top: 15%;
+  height: 70%;
+  width: 40%;
+  left: 30%;
+  box-shadow: 0px 0px 20px;
+  background-color: white;
+  overflow: scroll;
+}
+
+.description:hover {
+  color: #0073BB;
 }

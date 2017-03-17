@@ -41,7 +41,12 @@ const Business = (props) => {
 					<div style={{color: '#666666'}}>{reviews.length} reviews</div>
 				</div>
 				<p style={{margin: '7px 0px -12px 0px'}}>{price}  {categories}</p>
-				<p style={{textAlign: 'left'}}>{description.substring(0, 100)}...</p>
+				<p 
+					onClick={() => props.displayModal('update', {...props.data, bKey: props.bKey})}
+					className='description' 
+					style={{textAlign: 'left', cursor: 'pointer'}}>
+					{description.substring(0, 100)}...
+				</p>
 			</div>
 		</div>
 	);
